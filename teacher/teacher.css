@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    white 0%,
+    white 50%,
+    #0048A0 50%,
+    #0048A0 100%
+  );
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+height: 40vh;
+
+}
+
+.subjects {
+ 
+  height: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 600px;
+  /* height: 180px; */
+}
+
+.subjects h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.subjects h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.preview {
+  background-color: #38298f;
+  color: #fff;
+  padding: 30px;
+  max-width: 250px;
+}
+
+.preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.info {
+  padding: 30px;
+  position: relative;
+  width: 20px;
+}
+
+.btn {
+  margin: 0;
+
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 15%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 16px;
+  padding: 12px 25px;
+  bottom: 30px;
+  right: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6a63d1;
+  color: #fff;
+}
+
+.floating-btn {
+  border-radius: 20%;
+  border: #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  /* line-height: 20px; */
+  padding: 12px 20px;
+  position: absolute;
+  top: 55px;
+  left: 130px;
+
+}
+
+.floating-btn:hover {
+  text-decoration: underline;
+}
+
+.floating-btn1 {
+  border-radius: 20%;
+  background-color: transparent;
+  border: #fff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 20px;
+  position: fixed;
+  top: 55px;
+  right: 130px;
+
+}
+
+.floating-btn1:hover {
+  text-decoration: underline;
+}
+
+.floating-btn2 {
+  cursor: pointer;
+  padding: 12px 20px;
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  z-index: 999;
+  max-width: 170px;
+}

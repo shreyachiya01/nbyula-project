@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+    <link rel="stylesheet" href="quizapp.css" />
+    <link rel="stylesheet" href="quizgamestyle.css" />
+  </head>
+  <body>
+    <form method="post" action="formtransfer.php">
+      <div id="form_page">
+        <div id="form_body">
+          <div id="head">
+            <h1 id="heading">Add questions to quiz</h1>
+          </div>
+          <br />
+          <div id="input_question" class="input">
+            <input
+              id="question"
+              type="text"
+              placeholder="Question"
+              name="question"
+              required
+            />
+          </div>
+          <div id="input_choice1" class="input">
+            <input
+              id="choice1"
+              type="text"
+              placeholder="choice1"
+              name="choice1"
+              required
+            />
+          </div>
+          <div id="input_choice2" class="input">
+            <input
+              id="choice2"
+              type="text"
+              placeholder="choice2"
+              name="choice2"
+              required
+            />
+          </div>
+          <div id="input_choice3" class="input">
+            <input
+              id="choice3"
+              type="text"
+              placeholder="choice3"
+              name="choice3"
+              required
+            />
+          </div>
+          <div id="input_choice4" class="input">
+            <input
+              id="choice4"
+              type="text"
+              placeholder="choice4"
+              name="choice4"
+              required
+            />
+          </div>
+          <div id="input_answer" class="input">
+            <input
+              id="answer"
+              type="text"
+              placeholder="answer"
+              name="answer"
+              required
+            />
+          </div>
+
+          <div class="id input">
+            <input
+              id="submit"
+              type="submit"
+              name="submit"
+              value="submit"
+              onclick="on_submit()"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

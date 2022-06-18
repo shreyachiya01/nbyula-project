@@ -1,0 +1,101 @@
+body{
+  background-color: white ;
+}
+.container{
+  background-color: #0048A0;
+  color: white;
+  height: 650px;
+  display: flex;
+  margin-top: 50px;
+}
+.choice-container {
+  border-radius: 10px;
+  display: flex;
+  
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgb(86, 165, 235, 0.25);
+  background-color: white;
+  box-shadow: 0 16px 22px -17px #03153b;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #001f61;
+  color: white;
+}
+
+.choice-text {
+  text-align: center;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: green;
+  box-shadow: 0 16px 22px -17px #03153b;
+}
+
+.incorrect {
+  background-color: red;
+  box-shadow: 0 16px 22px -17px #03153b;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  color: white;
+
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #fefefe;
+  margin-top: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 16px 22px -17px #03153b;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: aquamarine;
+  width: 0%;
+  border-radius: 20px;
+  box-shadow: 0 16px 22px -17px #03153b;
+}
+.btn {
+  margin: 0;
+
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 16px;
+  padding: 12px 25px;
+  bottom: 30px;
+  right: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
