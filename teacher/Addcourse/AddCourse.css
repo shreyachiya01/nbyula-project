@@ -1,0 +1,39 @@
+body {
+    height: 100vh;
+    background: linear-gradient(
+      to top,
+      white 0%,
+      white 50%,
+      #0048A0 50%,
+      #0048A0 100%
+    );
+      font-family: 'Muli', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      
+  }
+
+  .container
+  {
+      height: 350px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: #260f5c;
+      border-radius: 20%;
+  }
+  input
+  {
+      border: solid white;
+      height: 30px;
+
+  }
+  .heading
+  {
+      color: white;
+      
+  }
