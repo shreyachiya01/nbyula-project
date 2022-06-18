@@ -12,26 +12,19 @@
       <div id="end" class="flex-center flex-column">
         <h2 class="heading">Your final score is</h2>
         <h1 id="finalScore"></h1>
-        <form>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="Quiz Code"
-          />
-          <button
-            type="submit"
-            class="btn"
-            id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-            disabled
-          >
-            Lock Score
-          </button>
-        </form>
       </div>
     </div>
-    <script src="end.js"></script>
+    <script >
+      const scoreEndHtml = document.getElementById('finalScore')
+      const highScore = localStorage.getItem('mostHighScore')
+      const recentScore = localStorage.getItem('mostRecentScore')
+      scoreEndHtml.innerHTML = recentScore
+      if(recentScore>highScore){
+        localStorage.setItem('mostHighScore',recentScore)
+      }
+      console.log(localStorage.getItem('mostRecentScore'))
+      localStorage.setItem("mostRecentScore","0")
+    </script>
   </body>
 </html>
 

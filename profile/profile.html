@@ -16,6 +16,9 @@
         <a class="btn" href="../Student/studentdashboard.html">Go Home</a>
       </div>
     </div>
-    <script src="profile.js"></script>
+    <script>
+      const scoreEndHtml = document.getElementById('highScoreText')
+      scoreEndHtml.innerHTML = localStorage.getItem('mostHighScore')
+  </script>
   </body>
 </html>
